@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+
+<meta http-equiv="Circle of Fifths Piano" content="text/html; charset=utf-8" />
+
+<title>Karim's RCM Piano Studio</title>
+
+ 
+
+<style type='text/css'>
+
+body{
+
+            margin:0 0 0 0;}
+
+div{
+
+            border:0px dashed grey;}
+
+ 
+
+            div.header{
+
+                        height:50px;
+
+                        background-color:#F60;
+
+                        background-image:url('images/bck.gif');
+
+                        background-color:#F60;
+
+                        overflow:visible;}
+
+                        #header_logo{
+
+                                    display:block;
+
+                                    margin:auto;}
+
+            div.container{
+
+                       
+
+                        width:1024px;
+
+                        border-left:1px solid grey;
+
+                        border-right:1px solid grey;
+
+                        margin:auto;
+
+                        }
+
+                        div.cover{
+
+                                    width:inherit:;
+
+                                    height:250px;
+
+                                    background-image:url('images/go.gif')}
+
+                        div.body{
+
+                                    padding-top:10px;
+
+                                    width:inherit;
+
+                                    margin-top:-125px;
+
+                                    }
+
+                                    div.menu{height:110px;
+
+                                    margin-left:550px;
+
+                                    margin-top:25px;}
+
+                                                div.item{
+
+                                                            height:inherit;
+
+                                                            width:80px;
+
+                                                            float:left;
+
+                                                            margin-left:10px;}
+
+                                                img.button{
+
+                                                            height:80px;
+
+                                                            }
+
+                                    div.content{
+
+                                                display:block;
+
+                                                height:800px;
+
+                                                margin-top:-10px;
+
+                                                }
+
+                                               
+
+                                                div.block#left{
+
+                                                            display:inline;
+
+                                                            float:left;
+
+                                                            width:69%;
+
+                                                            }
+
+                                               
+
+                                                div.block#right{
+
+                                                           
+
+                                                            display:inline;
+
+                                                            float:left;
+
+                                                            width:29.5%;
+
+                                                            height:inherit;
+
+                                                            }
+
+                                                           
+
+                                                            div.plugin{
+
+                                                                        width:100%;
+
+                                                                        }
+
+                                                                       
+
+                                                                        div.plugin#social{
+
+                                                                                    margin-top:40px;}
+
+                                                                       
+
+                                                                        img.social{
+
+                                                                                    width:50px;
+
+                                                                                    height:50px;
+
+                                                                                    margin-left:25px;}
+
+                                                                        #fb_like{
+
+                                                                                    height:100px;}
+
+                                                                        #social{
+
+                                                                                    height:65px;}
+
+                                                                        #fb_stream{
+
+                                                                                    height:335px;}
+
+            div.footer{
+
+                        height:50px;
+
+                        background-image:url('images/bck2.gif');
+
+                        background-color:#F60;}
+
+                                   
+
+</style>
+
+<style type='text/css'>
+
+            div.apps{
+
+                        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+
+                        color:#333;
+
+                        border-radius:10px;
+
+                        height:665px;
+
+                        border:1px solid grey;
+
+                        box-shadow: 10px 10px 5px #888888;
+
+                        margin:50px 25px 15px 25px}
+
+                       
+
+                        img.logo{
+
+                                    margin-left:10px;}
+
+                        img.who{
+
+                                    display:block;
+
+                                    margin:auto;
+
+                                    margin-top:30px;}
+
+                        div.text{
+
+                                    width:90%;
+
+                                    margin:auto;}
+
+                        img.icon{
+
+                                    vertical-align:bottom;}
+
+                        h1{
+
+                                    display:inline;
+
+                                    font-size:35px;}
+
+                        h3{
+
+                                    display:inline;
+
+                                    font-size:25px;}
+
+div.footer{
+
+            font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+
+                        color:white;
+
+                        text-align:center;}
+
+</style>
+
+ 
+
+<script type="text/javascript" src="lib/jquery.js">
+
+</script>
+
+ 
+
+ 
+
+<script type='text/javascript'>
+
+$(document).ready(function(){
+
+            var height = $('div.text').height();
+
+            $('div.apps').css("height",height+160);
+
+            $('div.content').css("height",height+260);
+
+           
+
+            $('div.item#home').click(function(){
+
+                        $('div.block#left').load('links/home.html');
+
+                        });
+
+           
+
+            $('div.item#about').click(function(){
+
+                        $('div.block#left').load('links/about.html');
+
+                        });
+
+ 
+
+           
+
+            $('div.item').mouseover(function(){
+
+                        $(this).css("cursor","pointer");
+
+                        $(this).stop();
+
+                        $(this).animate({'margin-top':'18px'},260);
+
+            });
+
+           
+
+            $('div.item').mouseout(function(){
+
+                        $(this).stop();
+
+                        $(this).animate({'margin-top':'0px'},350);
+
+            });       
+
+           
+
+});
+
+</script>
+
+</head>
+
+ 
+
+<body>
+
+<div id="fb-root"></div>
+
+<script>
+
+  window.fbAsyncInit = function() {
+
+    FB.init({
+
+      appId      : '236504959760237', // App ID
+
+      channelUrl : 'https://www.google.com', // Channel File
+
+      status     : true, // check login status
+
+      cookie     : true, // enable cookies to allow the server to access the session
+
+      xfbml      : true  // parse XFBML
+
+    });
+
+ 
+
+    // Additional initialization code here
+
+  };
+
+ 
+
+  // Load the SDK Asynchronously
+
+  (function(d){
+
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+
+     if (d.getElementById(id)) {return;}
+
+     js = d.createElement('script'); js.id = id; js.async = true;
+
+     js.src = "//connect.facebook.net/en_US/all.js";
+
+     ref.parentNode.insertBefore(js, ref);
+
+   }(document));
+
+</script>
+
+<div id="fb-root"></div>
+
+<div class='header'>
+
+           
+
+</div>
+
+<div class='container'>
+
+            <div class='cover'>
+
+    </div>
+
+    <div class='body' id='body'>
+
+            <div class='menu'>
+
+            <a href='#body'><div class='item' id='home'><img class='button' id='home' src='images/button.png' /></div></a>
+
+        <a href='#body'><div class='item' id='about'><img class='button' id='about' src='images/about.png' /></div></a>
+
+ 
+
+                        </div>
+
+            <div class='content' id='content'>
+
+           
+
+                        <div class='block' id='left'>
+
+                        <div class='apps'>
+
+                        <img class='who' src='images/who.gif' />
+
+                    <br/>
+
+                    <br/>
+
+                  
+
+                    <div class='text'>
+
+                    I am a certified Piano Instructor with Piano experience as of Grade 9 RCM. <br/><br/>
+
+                    <img src='images/gear.gif' class='icon' width='50px' height='50px' />
+
+                    <h1>Lessons: </h1><br/><br/>I offer 30- and 60-minute lessons relevent to the student's level of piano, and increase the student's interest in music with my fun ways of teaching. <br/><br/>
+
+                                        <img src='images/pencil.gif' class='icon' width='50px' height='50px' />
+
+ 
+
+                    <h1>Useful Books: </h1><br/><br/>We make use of these informative books:
+
+    <ul><li>Repertoire Book</li></ul>
+
+    <ul><li>Studies Book</li></ul>
+
+    <ul><li>Sight Reading Book</li></ul>
+
+    <ul><li>Frederick Harris Music Company Brown Scale Book</li></ul>
+
+    <ul><li>These books can be found at any music store</li></ul>
+
+ 
+
+                </div>           
+
+                
+
+            </div>
+
+                        <div class='block' id='right'>
+
+                        <br/><br/>
+
+                        <div class='plugin' id='social'>
+
+                <img class='social' src='images/facebook.gif'/>
+
+                <img class='social' src='images/twitter.gif'/>
+
+                <img class='social' src='images/youtube.gif'/>
+
+                </div>
+
+                <div class='plugin' id='fb_stream'>
+
+                        <div class="fb-like-box" data-href="http://www.facebook.com/gapsum" data-width="292" data-height="400" data-show-faces="true" data-stream="true" data-header="true"></div>
+
+                </div>
+
+                        </div>
+
+            </div>
+
+   </div>
+
+</div>
+
+<div class='footer'>
+
+<br/>
+
+Copyrights : Gapsum Technologies
+
+</div>
+
+</body>
+
+</html>
+
+<style type='text/css'>
+
+            div.apps{
+
+                       
+
+                        height:665px;
+
+                        border-radius:10px;
+
+                        border:1px solid grey;
+
+                        box-shadow: 10px 10px 5px #888888;
+
+                        margin:50px 25px 15px 25px}
+
+                       
+
+                        img.logo{
+
+                                    margin-left:10px;}
+
+</style>
+
+ 
+
+           
+
+                        <div class='apps'>
+
+               
+
+                        <img class='who' src='images/aboutus.gif' />
+
+                    <br/><br/><br/>
+
+                    <div class='text'>
+
+                        <img src='images/logo1.gif' class='icon' width='50px' height='50px' />
+
+                        <h1> Company </h1><br/><br/>
+
+                        We are a musical company that offers Piano Teaching services to potential students.
+
+                        <br/><br/>
+
+                        Download Link https://www.circleoffifths.com/:<br/><br/>
+
+                        <img src='images/logo1.gif' class='icon' width='50px' height='50px' />
+
+                        <h1> Team </h1><br /><br/>
+
+                        We have a pretty smart and enthusiastic teacher.
+
+                       
+
+                     
+
+                        <ul>
+
+                                    <li>
+
+                                                                                                Karim Ashroff: Founder & Teacher
+
+                                                                                                555-555-5655
+
+                                                                                                hamlet@shakespeare.com
+
+                            </li>
+
+                           
+
+                                                                        </ul>
+
+                                                                        <p id = "name">First and Last Names:</p>
+
+                                                                        <input type = "text" oninput = "myfunction()">
+
+                                                                        <p id = "name">Home Phone #:</p>
+
+                                                                        <input type = "text" oninput = "myfunction()">
+
+                                                                        <p id = "name">E-mail Address:</p>
+
+                                                                        <input type = "text" oninput = "myfunction()">
+
+                                                                        <p id = "name">Subject:</p>
+
+                                                                        <input type = "text" oninput = "myfunction()">
+
+                                                            <p id = "name">Any Inquiries?</p>
+
+                                                                        <input type = "text" oninput = "myfunction()">
+
+                                                           
+
+                                                                        <p> What level of piano are you currently at?</p>
+
+                                                <select>
+
+                                                                        <option value="1">1</option>
+
+                                                                        <option value="2">2</option>
+
+                                                                        <option value="3">3</option>
+
+                                                                        <option value="4">4</option>
+
+                                                                        <option value="5">5</option>
+
+                                                                        <option value="6">6</option>
+
+                                                                        <option value="7">7</option>
+
+                                                                        <option value="8">8</option>
+
+                                                                        <option value="9">9</option>
+
+                                                                        <option value="10">10</option>
+
+                                                 </select>
+
+                                                 <button onclick="myFunction()">Submit</button>
+
+                        <br /><br/><br/>
+
+                    </div>
+
+                </div>
